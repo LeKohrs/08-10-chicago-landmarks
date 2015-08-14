@@ -1,0 +1,58 @@
+.wrapper {
+    max-width: 1000px;
+    @include center-block();
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-family: 'Berthold Medium Condensed';
+    font-size: 3.74em;
+    margin: 0;
+    color: $siteRed;
+}
+
+p, p span {
+    font-family: 'Geometria Light';
+    margin: 0;
+    color: $siteMaroon;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+p span {
+    font-size: 1em;
+}
+
+@media only screen and (min-width: (575rem/16)) {
+    html, body {
+        background: $siteTan;
+    }
+    
+    h1 {
+        font-family: 'Grand Hotel Regular';
+        margin-bottom: 2%;
+        font-size: 4.97em;
+        color: white;
+    }
+
+    h2 {
+        font-family: 'Berthold Medium Condensed';
+        font-size: 3.74em;
+        margin: 0;
+        color: white;
+    }
+
+    p {
+        font-family: 'Geometria Light';
+        margin: 0;
+        font-size: 1.25em;
+        color: white;
+    }
+
+    p span {
+        font-size: 1.3em;
+        color: white;
+    }
+}

@@ -1,0 +1,188 @@
+.main--full-width {
+    position: relative;
+}
+
+.short--section {
+    position: relative;
+}
+
+.tall--section {
+    position: relative;
+}
+
+.cross img {
+    transition-duration: .5s;
+}
+
+.section--text {
+    padding: 7.81% 3.909%;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+}
+
+.cross {
+    display: none;
+}
+
+.square-section {
+    height: 0;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 75%;
+}
+
+#chicagoTheatre {
+    background-image: url('../img/chicago-theatre-mobile_2x.png');
+}
+
+#navyPier {
+    background-image: url('../img/navy-pier-mobile_2x.png');
+}
+
+#crownFountain {
+    background-image: url('../img/crown-fountain-mobile_2x.png');
+}
+
+#buckinghamFountain {
+    background-image: url('../img/buckingham-fountain-mobile_2x.png');
+}
+
+#wrigleyField {
+    background-image: url('../img/wrigley-field-mobile_2x.png');
+}
+
+#millenniumPark {
+    background-image: url('../img/millennium-park-mobile_2x.png');
+}
+
+#cloudGate {
+    background-image: url('../img/cloud-gate_2x.png');
+}
+
+#fieldMuseum {
+    background-image: url('../img/field-museum_2x.png');
+}
+
+#lincolnPark {
+    background-image: url('../img/lincoln-park-zoo_2x.png');
+}
+
+#skydeck {
+    background-image: url('../img/skydeck-mobile_2x.png');
+}
+
+@media only screen and (min-width: (575rem/16)) {
+    .body--main {
+        @include flexbox();
+        @include flexbox-flex-wrap(wrap);
+        @include flexbox-align-items(flex-start);
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .section--text {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition-duration: .5s;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .section--text.red {
+        background: url('../img/red-overlay.png') repeat;
+    }
+
+    .section--text.sky-blue {
+        background: url('../img/sky-blue-overlay.png') repeat;
+    }
+
+    .section--text.blue {
+        background: url('../img/blue-overlay.png') repeat;
+    }
+    
+    .section--text.maroon {
+        background: url('../img/maroon-overlay.png') repeat;
+    }
+    
+    .cross {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: white;
+        z-index: 500;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .main--full-width {
+        width: 100%;
+    }
+    
+    .main--wide {
+        width: (100%/3 * 2);
+    }
+
+    .main--thin {
+        width: (100%/3);
+    }
+    
+    .square-section {
+        margin-bottom: 0;
+    }
+    
+    .body--main .horizontal-section {
+        padding-top: 50%;
+    }
+    
+    .body--main .vertical-section {
+        padding-top: 200%;
+    }
+    
+    .body--main .long-section {
+        padding-top: (100%/3);
+    }
+    
+    #chicagoTheatre {
+        background-image: url('../img/chicago-theater_2x.png');
+    }
+
+    #navyPier {
+        background-image: url('../img/navy-pier_2x.png');
+    }
+
+    #crownFountain {
+        background-image: url('../img/crown-fountain_2x.png');
+    }
+
+    #buckinghamFountain {
+        background-image: url('../img/buckingham-fountain_2x.png');
+    }
+
+    #wrigleyField {
+        background-image: url('../img/wrigley-field_2x.png');
+    }
+
+    #millenniumPark {
+        background-image: url('../img/millennium-park_2x.png');
+    }
+
+    #cloudGate {
+        background-image: url('../img/cloud-gate_2x.png');
+    }
+
+    #fieldMuseum {
+        background-image: url('../img/field-museum_2x.png');
+    }
+
+    #lincolnPark {
+        background-image: url('../img/lincoln-park-zoo_2x.png');
+    }
+
+    #skydeck {
+        background-image: url('../img/skydeck_2x.png');
+    }
+}
